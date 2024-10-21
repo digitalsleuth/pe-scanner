@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["debian*", "binaries*", "build*", "dist*"]
+
+[project]
+name = "pescanner"
+version = "2.0.0"
+dependencies = [
+    "capstone",
+    "pefile",
+    "ppdeep",
+    "python-magic",
+    "yara-python"
+]
+requires-python = ">=3.6"
+authors = [
+  {name = "Michael Ligh / Glenn P. Edwards Jr. (@hiddenillusion)"}
+]
+maintainers = [
+  {name = "Corey Forman (digitalsleuth)", email = "github@digitalsleuth.ca"}
+]
+description = "Basic PE scanning utility for Python 3"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["digital forensics", "dfir", "pescanner"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/digitalsleuth/pescanner"
+
+[project.scripts]
+pescanner = "pescanner.pescanner:main"
