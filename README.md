@@ -4,8 +4,9 @@ A Python 3 rebuild of the [original pescanner.py](https://github.com/hiddenillus
 
 ## Updates
 
-Now uses capstone instead of pydasm to capture initial instructions
-Argparse added to select clamscan binary path, userdb, yara rules, etc.
+- Now uses capstone instead of pydasm to capture initial instructions  
+  
+- Argparse added to select clamscan binary path, userdb, yara rules, etc.
 
 ## Usage
 ```bash
