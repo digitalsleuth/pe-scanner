@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 exclude = ["debian*", "binaries*", "build*", "dist*"]
 
 [project]
-name = "pescanner"
+name = "pe-scanner"
 version = "2.0.0"
 dependencies = [
     "capstone",
@@ -25,7 +25,7 @@ maintainers = [
 description = "Basic PE scanning utility for Python 3"
 readme = "README.md"
 license = {file = "LICENSE"}
-keywords = ["digital forensics", "dfir", "pescanner"]
+keywords = ["digital forensics", "dfir", "pescanner", "pe-scanner"]
 classifiers = [
   "Development Status :: 5 - Production/Stable",
   "Programming Language :: Python :: 3",
@@ -34,7 +34,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/digitalsleuth/pescanner"
+Homepage = "https://github.com/digitalsleuth/pe-scanner"
 
 [project.scripts]
-pescanner = "pescanner.pescanner:main"
+pe-scanner = "pescanner.pescanner:main"
