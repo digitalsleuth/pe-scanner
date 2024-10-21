@@ -45,7 +45,7 @@ import magic
 import yara
 import capstone
 
-__tool__ = "pescanner"
+__tool__ = "pe-scanner"
 __version__ = "2.0.0"
 __maintainer__ = "Corey Forman (digitalsleuth)"
 
